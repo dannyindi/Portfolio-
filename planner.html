@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Daniella Bognet - Data Science student portfolio at Miva Open University">
+<title>Planner | Daniella Bognet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">Daniella Bognet</a>
+  <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav aria-label="Main navigation"><ul id="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" class="active">Planner</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+</header>
+<main>
+<section class="block narrow">
+  <h1>Academic planner</h1>
+  <p>Add your study tasks, tick them off, and delete them. Tasks stay saved in this browser.</p>
+  <form id="task-form" novalidate>
+    <label for="task-input">New task</label>
+    <div class="row"><input id="task-input" type="text" placeholder="e.g. Finish Python lab"><button class="btn" type="submit">Add task</button></div>
+    <p id="task-error" class="error" role="alert"></p>
+  </form>
+  <p id="task-count" class="small"></p>
+  <ul id="task-list" class="tasks"></ul>
+  <button id="clear-done" class="btn btn-outline" type="button">Clear completed</button>
+</section>
+</main>
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Daniella Bognet &middot; Data Science, Miva Open University</p>
+  <p><a href="mailto:daniellaakaub@gmail.com">daniellaakaub@gmail.com</a> &middot; 0703 9412 102</p>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
